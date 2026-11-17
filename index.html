@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#2563EB">
+<title>Les jobs d'été — Vérifie tes droits</title>
+<style>
+:root{--blue:#2563EB;--blue-dark:#1D4ED8;--green:#16A34A;--red:#DC2626;--orange:#F59E0B;--ink:#172033;--muted:#64748B;--line:#E2E8F0;--soft:#F3F4F6;--white:#fff;--radius:18px;--shadow:0 12px 34px rgba(15,23,42,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#F8FAFC;color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.55}button,input,select,textarea{font:inherit}button{cursor:pointer}
+.topbar{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}.topinner{max-width:1120px;margin:auto;padding:13px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{display:flex;align-items:center;gap:11px;font-weight:850;letter-spacing:-.04em;font-size:1.05rem}.logo{width:40px;height:40px;border-radius:13px;background:var(--blue);color:white;display:grid;place-items:center;font-size:1.25rem;box-shadow:0 5px 14px #2563eb40}.topnote{font-size:.82rem;color:var(--muted)}
+main{max-width:1120px;margin:auto;padding:30px 22px 70px}.hero{background:linear-gradient(130deg,#1D4ED8,#2563EB 58%,#60A5FA);color:white;border-radius:28px;padding:clamp(26px,5vw,56px);position:relative;overflow:hidden;box-shadow:var(--shadow)}.hero:after{content:"☀";position:absolute;font-size:190px;right:5%;top:-35px;opacity:.11}.eyebrow{font-size:.78rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase;opacity:.85}.hero h1{font-size:clamp(2.1rem,5vw,3.8rem);line-height:1.04;letter-spacing:-.055em;margin:12px 0 16px;max-width:700px}.hero p{font-size:1.08rem;max-width:640px;color:#EAF1FF;margin:0 0 24px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px}.btn{border:0;border-radius:13px;padding:12px 18px;font-weight:750;display:inline-flex;align-items:center;justify-content:center;gap:9px;transition:.18s;min-height:46px}.btn:hover{transform:translateY(-1px)}.btn-primary{background:var(--blue);color:white}.hero .btn-primary{background:white;color:var(--blue-dark)}.btn-ghost{background:#ffffff20;color:white;border:1px solid #ffffff65}.btn-outline{background:white;color:var(--ink);border:1px solid var(--line)}.btn-danger{background:#FEE2E2;color:#991B1B}.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0 34px}.feature{background:white;border:1px solid var(--line);border-radius:17px;padding:17px}.feature .ico{font-size:1.4rem}.feature strong{display:block;margin:5px 0}.feature span{color:var(--muted);font-size:.9rem}
+.panel{background:white;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:clamp(18px,3vw,30px);margin-top:22px}.panel h2{font-size:1.45rem;letter-spacing:-.03em;margin:0 0 5px}.sub{color:var(--muted);margin:0 0 22px}.section-head{display:flex;align-items:flex-start;gap:13px;margin-bottom:18px}.stepnum{flex:none;width:36px;height:36px;border-radius:12px;background:#DBEAFE;color:var(--blue-dark);font-weight:850;display:grid;place-items:center}.formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}.field{min-width:0}.field.full{grid-column:1/-1}label,.legend{display:block;font-weight:700;font-size:.93rem;margin-bottom:7px}.hint{display:block;color:var(--muted);font-size:.82rem;margin-top:5px}.required{color:var(--red)}input,select,textarea{width:100%;border:1px solid #CBD5E1;border-radius:11px;padding:11px 12px;background:white;color:var(--ink);outline:none;min-height:45px}input:focus,select:focus,textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px #2563eb20}input[type=checkbox],input[type=radio]{width:18px;min-height:18px;accent-color:var(--blue)}.choices{display:flex;flex-wrap:wrap;gap:9px}.choice{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:12px;padding:10px 12px;font-size:.9rem;background:#fff}.choice:has(input:checked){border-color:var(--blue);background:#EFF6FF}.days{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}.day{display:grid;place-items:center;gap:4px;background:var(--soft);padding:8px 2px;border-radius:10px;font-size:.8rem}.callout{border-radius:13px;padding:13px 15px;background:#EFF6FF;color:#1E40AF;font-size:.9rem;margin:14px 0}.callout.warn{background:#FFF7ED;color:#9A3412}.callout small{display:block;opacity:.85}.form-actions{display:flex;justify-content:space-between;gap:12px;margin-top:25px;flex-wrap:wrap}.progresswrap{margin:0 0 20px}.progressmeta{display:flex;justify-content:space-between;color:var(--muted);font-size:.82rem;margin-bottom:7px}.progress{height:8px;border-radius:20px;background:#E2E8F0;overflow:hidden}.progress>div{height:100%;width:25%;background:var(--blue);transition:width .25s}.step{display:none}.step.active{display:block}.hidden{display:none!important}
+.results-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap}.summarygrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:20px 0}.stat{padding:16px;border-radius:15px;background:var(--soft);border:1px solid var(--line)}.stat b{font-size:1.8rem;display:block;line-height:1.2}.stat span{font-size:.82rem;color:var(--muted)}.stat.good{background:#F0FDF4;border-color:#BBF7D0}.stat.bad{background:#FEF2F2;border-color:#FECACA}.stat.warn{background:#FFFBEB;border-color:#FDE68A}.status{display:inline-flex;align-items:center;gap:6px;font-weight:800;font-size:.78rem;padding:5px 9px;border-radius:99px}.status.ok{background:#DCFCE7;color:#166534}.status.no{background:#FEE2E2;color:#991B1B}.status.maybe{background:#FEF3C7;color:#92400E}.rulelist{display:grid;gap:11px;margin-top:15px}.rule{border:1px solid var(--line);border-left:5px solid #94A3B8;border-radius:13px;padding:14px 15px;background:#fff}.rule.ok{border-left-color:var(--green)}.rule.no{border-left-color:var(--red)}.rule.maybe{border-left-color:var(--orange)}.rule h3{margin:0 0 5px;font-size:1rem;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}.rule p{margin:0;color:#475569;font-size:.91rem}.rule .detail{font-size:.82rem;color:var(--muted);margin-top:6px}.results-actions{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0}.footer{margin-top:28px;padding:22px 4px;color:var(--muted);font-size:.84rem}.footer a,.sources a{color:var(--blue-dark)}.legal{font-size:.87rem;color:var(--muted)}.tag{display:inline-block;background:#DBEAFE;color:#1D4ED8;padding:4px 9px;border-radius:99px;font-size:.76rem;font-weight:800}.error{color:#B91C1C;font-size:.85rem;margin-top:5px}.smallprint{font-size:.8rem;color:var(--muted)}.divider{height:1px;background:var(--line);margin:24px 0}
+@media(max-width:760px){main{padding:18px 14px 48px}.topinner{padding:10px 14px}.topnote{display:none}.features{grid-template-columns:1fr}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.summarygrid{grid-template-columns:repeat(2,1fr)}.days{grid-template-columns:repeat(4,1fr)}.hero{border-radius:22px}.hero:after{right:-20px;font-size:130px}.panel{padding:18px}.form-actions .btn{flex:1}}
+@media print{body{background:white}.topbar,.hero,.features,#questionnaire,.results-actions,.footer .noprint{display:none!important}main{padding:0;max-width:none}.panel{box-shadow:none;border:0;padding:0}.rule{break-inside:avoid}.results-head{margin-bottom:10px}.summarygrid{grid-template-columns:repeat(4,1fr)}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="topinner"><div class="brand"><div class="logo">☀</div><span>LES JOBS D’ÉTÉ</span></div><div class="topnote">Tes droits • Tes horaires • Ton été</div></div></header>
+<main>
+<section class="hero" id="home">
+<div class="eyebrow">Le réflexe avant de signer</div>
+<h1>Ton job d’été mérite un <span style="color:#DBEAFE">check-up.</span></h1>
+<p>Un simulateur pédagogique pour mieux comprendre tes conditions de travail et repérer les points à vérifier selon ton âge.</p>
+<div class="hero-actions"><button class="btn btn-primary" id="startBtn">Commencer le questionnaire <span>→</span></button><button class="btn btn-ghost" id="rulesBtn">Voir les règles essentielles</button></div>
+</section>
+<div class="features">
+<div class="feature"><div class="ico">🧭</div><strong>Un questionnaire guidé</strong><span>Des questions adaptées à ton âge et à ta situation.</span></div>
+<div class="feature"><div class="ico">🧮</div><strong>Des calculs automatiques</strong><span>Durée de travail, pauses et repos sont analysés.</span></div>
+<div class="feature"><div class="ico">🟢</div><strong>Un bilan compréhensible</strong><span>Chaque point est expliqué en vert, rouge ou orange.</span></div>
+</div>
+
+<section class="panel hidden" id="rulesInfo">
+<h2>Les repères utilisés</h2><p class="sub">Les règles générales présentées ici peuvent connaître des exceptions selon le secteur et la situation.</p>
+<div class="rulelist">
+<div class="rule"><h3>14 à 15 ans <span class="tag">Travaux légers pendant les vacances</span></h3><p>En règle générale : 7 h par jour et 35 h par semaine au maximum, repos quotidien de 14 h, pause de 30 minutes après 4 h 30 de travail, et travail de nuit interdit entre 20 h et 6 h.</p></div>
+<div class="rule"><h3>16 à 17 ans</h3><p>En règle générale : 8 h par jour et 35 h par semaine au maximum, repos quotidien de 12 h, pause de 30 minutes après 4 h 30 de travail, deux jours de repos consécutifs par semaine et travail de nuit interdit entre 22 h et 6 h.</p></div>
+<div class="rule"><h3>18 ans et plus</h3><p>En règle générale : 10 h par jour, 48 h sur une semaine (et 44 h en moyenne sur 12 semaines), pause de 20 minutes dès 6 h de travail, repos quotidien de 11 h et repos hebdomadaire de 35 h consécutives.</p></div>
+</div>
+<div class="callout warn">Attention : ce simulateur donne des indications pédagogiques. Il ne remplace pas une vérification officielle, notamment lorsqu’une dérogation ou une convention collective intervient.</div>
+</section>
+
+<section class="panel hidden" id="questionnaire" aria-label="Questionnaire de vérification">
+<div class="section-head"><div class="stepnum">☀</div><div><h2>Ton questionnaire</h2><p class="sub">Réponds aux questions étape par étape. Les questions concernant les mineurs s’adaptent automatiquement à ton âge.</p></div></div>
+<div style="display:flex;justify-content:flex-end;margin:-6px 0 12px"><button type="button" class="btn btn-outline" id="homeBtn">← Retour à l’accueil</button></div>
+<div class="progresswrap"><div class="progressmeta"><span id="stepLabel">Étape 1 sur 4</span><span id="progressPercent">25 %</span></div><div class="progress"><div id="progressBar"></div></div></div>
+<form id="jobForm" novalidate>
+<div class="step active" data-step="0">
+<div class="section-head"><div class="stepnum">1</div><div><h2>Ta situation</h2><p class="sub">Quelques informations pour appliquer les bonnes règles.</p></div></div>
+<div class="formgrid">
+<div class="field"><label for="age">Quel âge auras-tu au premier jour du contrat ? <span class="required">*</span></label><input id="age" type="number" min="14" max="99" placeholder="Ex. 16" required><span class="hint">Le simulateur traite les situations de 14 ans et plus.</span></div>
+<div class="field"><label for="sector">Dans quel secteur vas-tu travailler ? <span class="required">*</span></label><select id="sector" required><option value="">Choisir…</option><option>Commerce / vente</option><option>Hôtellerie / restauration</option><option>Agriculture</option><option>Animation / loisirs</option><option>Tourisme / camping</option><option>Services / entretien</option><option>Spectacle / événementiel</option><option>Autre</option></select></div>
+<div class="field"><label for="contract">Quel est le type de contrat ?</label><select id="contract"><option value="">Je ne sais pas</option><option>CDD saisonnier</option><option>CDD classique</option><option>Intérim</option><option>Autre / à préciser</option></select></div>
+<div class="field"><label for="job">Quel poste ou quelles tâches vas-tu effectuer ?</label><input id="job" placeholder="Ex. serveur, vendeur, récolte…"></div>
+<div class="field"><label for="startDate">Date de début du travail <span class="required">*</span></label><input id="startDate" type="date" required></div>
+<div class="field"><label for="endDate">Date de fin du travail <span class="required">*</span></label><input id="endDate" type="date" required></div>
+<div class="field full"><span class="legend">Le travail a-t-il lieu pendant les vacances scolaires ? <span class="required">*</span></span><div class="choices"><label class="choice"><input type="radio" name="holidays" value="yes" required> Oui</label><label class="choice"><input type="radio" name="holidays" value="no"> Non</label></div></div>
+<div class="field full hidden" id="holidayDates"><div class="formgrid">
+<div class="field"><label for="holidayDays">Durée totale des vacances concernées (en jours calendaires)</label><input id="holidayDays" type="number" min="1" max="90" placeholder="Ex. 14"></div>
+<div class="field"><label for="holidayRestDays">Durée du repos continu pendant ces vacances (en jours)</label><input id="holidayRestDays" type="number" min="0" max="90" placeholder="Ex. 7"></div>
+</div><span class="hint">Pour les 14-15 ans, les vacances doivent durer au moins 14 jours et le repos continu doit représenter au moins la moitié de la durée totale des vacances (règle générale hors particularités agricoles).</span></div>
+</div>
+<div class="form-actions"><span></span><button type="button" class="btn btn-primary next">Continuer →</button></div>
+</div>
+
+<div class="step" data-step="1">
+<div class="section-head"><div class="stepnum">2</div><div><h2>Autorisations et sécurité</h2><p class="sub">Les protections particulières dépendent notamment de ton âge.</p></div></div>
+<div class="formgrid">
+<div class="field full minor-only"><span class="legend">As-tu l’autorisation écrite de ton représentant légal ?</span><div class="choices"><label class="choice"><input type="radio" name="parent" value="yes"> Oui</label><label class="choice"><input type="radio" name="parent" value="no"> Non</label><label class="choice"><input type="radio" name="parent" value="na"> Je suis émancipé(e)</label><label class="choice"><input type="radio" name="parent" value="unknown"> Je ne sais pas</label></div></div>
+<div class="field full under16-only"><span class="legend">L’employeur a-t-il demandé l’autorisation de l’inspection du travail ?</span><div class="choices"><label class="choice"><input type="radio" name="inspection" value="yes"> Oui</label><label class="choice"><input type="radio" name="inspection" value="no"> Non</label><label class="choice"><input type="radio" name="inspection" value="unknown"> Je ne sais pas</label></div></div>
+<div class="field full under16-only"><span class="legend">Le poste consiste-t-il uniquement en travaux légers adaptés à ton âge ?</span><div class="choices"><label class="choice"><input type="radio" name="lightWork" value="yes"> Oui</label><label class="choice"><input type="radio" name="lightWork" value="no"> Non</label><label class="choice"><input type="radio" name="lightWork" value="unknown"> Je ne sais pas</label></div></div>
+<div class="field full minor-only"><span class="legend">As-tu bénéficié d’une visite d’information et de prévention avant ton affectation au poste ?</span><div class="choices"><label class="choice"><input type="radio" name="medical" value="yes"> Oui</label><label class="choice"><input type="radio" name="medical" value="no"> Non</label><label class="choice"><input type="radio" name="medical" value="unknown"> Je ne sais pas</label></div></div>
+<div class="field full"><span class="legend">Le poste comporte-t-il des tâches ou risques particuliers ?</span><div class="choices"><label class="choice"><input type="radio" name="risk" value="no"> Non, à ma connaissance</label><label class="choice"><input type="radio" name="risk" value="yes"> Oui</label><label class="choice"><input type="radio" name="risk" value="unknown"> Je ne sais pas</label></div><span class="hint">Exemples : machines dangereuses, produits chimiques, travail en hauteur, port de charges ou exposition à des risques particuliers.</span></div>
+<div class="field full"><span class="legend">As-tu reçu un écrit présentant ton emploi (contrat, horaires ou informations écrites) ?</span><div class="choices"><label class="choice"><input type="radio" name="written" value="yes"> Oui</label><label class="choice"><input type="radio" name="written" value="no"> Non</label><label class="choice"><input type="radio" name="written" value="unknown"> Je ne sais pas</label></div></div>
+</div>
+<div class="callout">Ne prends pas de risque pour répondre : si tu ne connais pas une information, choisis « Je ne sais pas ». Le bilan indiquera qu’une vérification est nécessaire.</div>
+<div class="form-actions"><button type="button" class="btn btn-outline prev">← Retour</button><button type="button" class="btn btn-primary next">Continuer →</button></div>
+</div>
+
+<div class="step" data-step="2">
+<div class="section-head"><div class="stepnum">3</div><div><h2>Tes horaires et tes repos</h2><p class="sub">Indique une journée habituelle. Les calculs sont réalisés automatiquement.</p></div></div>
+<div class="formgrid">
+<div class="field"><label for="daysPerWeek">Combien de jours travailles-tu par semaine ? <span class="required">*</span></label><input id="daysPerWeek" type="number" min="1" max="7" required placeholder="Ex. 5"></div>
+<div class="field"><label for="startTime">Heure de début <span class="required">*</span></label><input id="startTime" type="time" required></div>
+<div class="field"><label for="endTime">Heure de fin <span class="required">*</span></label><input id="endTime" type="time" required></div>
+<div class="field"><label for="breakStart">Début de la pause principale</label><input id="breakStart" type="time"></div>
+<div class="field"><label for="breakEnd">Fin de la pause principale</label><input id="breakEnd" type="time"></div>
+<div class="field"><label for="weeklyHours">Heures hebdomadaires prévues (si différentes du calcul)</label><input id="weeklyHours" type="number" min="0" max="100" step=".25" placeholder="Laisser vide pour calcul automatique"><span class="hint">Le calcul automatique multiplie la durée journalière par le nombre de jours travaillés. Renseigne ici le total contractuel s’il est différent.</span></div>
+<div class="field full"><span class="legend">Quels jours travailles-tu habituellement ?</span><div class="days" id="weekdayChecks">
+<label class="day"><input type="checkbox" name="weekday" value="Lundi">Lun</label><label class="day"><input type="checkbox" name="weekday" value="Mardi">Mar</label><label class="day"><input type="checkbox" name="weekday" value="Mercredi">Mer</label><label class="day"><input type="checkbox" name="weekday" value="Jeudi">Jeu</label><label class="day"><input type="checkbox" name="weekday" value="Vendredi">Ven</label><label class="day"><input type="checkbox" name="weekday" value="Samedi">Sam</label><label class="day"><input type="checkbox" name="weekday" value="Dimanche">Dim</label></div></div>
+<div class="field"><label for="weeklyRest">Repos hebdomadaire continu (en heures)</label><input id="weeklyRest" type="number" min="0" max="168" step=".5" placeholder="Ex. 48"><span class="hint">Indique la plus longue période continue sans travail chaque semaine.</span></div>
+<div class="field"><label for="consecutiveRestDays">Nombre de jours de repos consécutifs</label><select id="consecutiveRestDays"><option value="">Je ne sais pas</option><option value="0">Aucun</option><option value="1">1 jour</option><option value="2">2 jours</option><option value="3">3 jours ou plus</option></select></div>
+<div class="field full"><span class="legend">Travailles-tu le dimanche ?</span><div class="choices"><label class="choice"><input type="radio" name="sunday" value="yes"> Oui</label><label class="choice"><input type="radio" name="sunday" value="no"> Non</label></div></div>
+<div class="field full"><span class="legend">Travailles-tu un jour férié ?</span><div class="choices"><label class="choice"><input type="radio" name="holidayWork" value="yes"> Oui</label><label class="choice"><input type="radio" name="holidayWork" value="no"> Non</label></div></div>
+<div class="field full"><span class="legend">Ton planning comprend-il des horaires de nuit ?</span><div class="choices"><label class="choice"><input type="radio" name="night" value="yes"> Oui</label><label class="choice"><input type="radio" name="night" value="no"> Non</label><label class="choice"><input type="radio" name="night" value="unknown"> Je ne sais pas</label></div></div>
+</div>
+<div class="callout" id="liveCalc">Le calcul de ta durée de travail apparaîtra dès que tu auras renseigné tes horaires.</div>
+<div class="form-actions"><button type="button" class="btn btn-outline prev">← Retour</button><button type="button" class="btn btn-primary next">Continuer →</button></div>
+</div>
+
+<div class="step" data-step="3">
+<div class="section-head"><div class="stepnum">4</div><div><h2>Ton salaire et la dernière vérification</h2><p class="sub">Ces informations permettent de comparer ton salaire au minimum indicatif applicable.</p></div></div>
+<div class="formgrid">
+<div class="field"><label for="hourlyPay">Salaire brut horaire proposé (en €)</label><input id="hourlyPay" type="number" min="0" step=".01" placeholder="Ex. 11,50"></div>
+<div class="field"><label for="experience">As-tu au moins 6 mois de pratique professionnelle dans cette branche ?</label><select id="experience"><option value="">Je ne sais pas</option><option value="yes">Oui, 6 mois ou plus</option><option value="no">Non, moins de 6 mois</option></select></div>
+<div class="field full"><label for="collective">Convention collective applicable (si tu la connais)</label><input id="collective" placeholder="Nom ou numéro IDCC, sinon laisser vide"><span class="hint">Un minimum conventionnel peut être supérieur au SMIC. Le simulateur ne peut pas le vérifier sans information précise.</span></div>
+<div class="field full"><span class="legend">Ton employeur t’a-t-il indiqué la convention collective applicable ?</span><div class="choices"><label class="choice"><input type="radio" name="collectiveKnown" value="yes"> Oui</label><label class="choice"><input type="radio" name="collectiveKnown" value="no"> Non</label><label class="choice"><input type="radio" name="collectiveKnown" value="unknown"> Je ne sais pas</label></div></div>
+<div class="field full"><span class="legend">Souhaites-tu ajouter une précision sur tes conditions de travail ?</span><textarea id="notes" rows="3" placeholder="Facultatif…"></textarea></div>
+</div>
+<div class="callout warn"><strong>Base salariale indicative :</strong> SMIC horaire brut de 12,31 € au 1er juin 2026 (hors Mayotte). Les minima minorés indicatifs des moins de 17 ans et des 17-18 ans sont respectivement de 9,85 € et 11,08 € si les conditions légales sont réunies. Vérifie toujours le montant en vigueur à la date du contrat et la convention collective.</div>
+<div class="form-actions"><button type="button" class="btn btn-outline prev">← Retour</button><button type="submit" class="btn btn-primary">Voir mon bilan →</button></div>
+</div>
+</form>
+</section>
+
+<section class="panel hidden" id="results">
+<div class="results-head"><div><span class="tag">Bilan de vérification</span><h2 style="margin-top:10px">Voici ton résultat</h2><p class="sub" id="resultIntro">Analyse de tes réponses.</p></div><button class="btn btn-outline" id="editBtn">← Modifier mes réponses</button></div>
+<div class="summarygrid">
+<div class="stat good"><b id="countOk">0</b><span>Règles respectées</span></div>
+<div class="stat bad"><b id="countNo">0</b><span>Règles non respectées</span></div>
+<div class="stat warn"><b id="countMaybe">0</b><span>À vérifier</span></div>
+<div class="stat"><b id="countTotal">0</b><span>Points analysés</span></div>
+</div>
+<div class="callout warn" id="overallNotice"></div>
+<h2 style="font-size:1.15rem;margin-top:24px">Détail des vérifications</h2>
+<div class="rulelist" id="ruleResults"></div>
+<div class="divider"></div>
+<h2 style="font-size:1.2rem">Les prochaines étapes</h2>
+<ul id="adviceList"></ul>
+<div class="callout"><strong>LES JOBS D’ÉTÉ : tes droits, tes garanties !</strong><br>Vérifie tes conditions de travail, connais tes droits et profite de ton été en toute connaissance de cause.<small>Les résultats sont indicatifs et ne remplacent pas l’avis d’un professionnel du droit ou des services compétents.</small></div>
+<div class="results-actions"><button class="btn btn-primary" id="printBtn">Imprimer / enregistrer en PDF</button><button class="btn btn-outline" id="restartBtn">Recommencer une vérification</button></div>
+</section>
+
+<section class="panel" id="legal">
+<h2>À propos du projet</h2><p class="sub">Un outil pédagogique réalisé dans le cadre d’un projet de Première STMG.</p>
+<div class="formgrid">
+<div class="field"><strong>Éditrices</strong><div>Amandine et Anna</div></div>
+<div class="field"><strong>Classe</strong><div>Première STMG</div></div>
+<div class="field"><strong>Nom du projet</strong><div>Les jobs d’été</div></div>
+<div class="field"><strong>Hébergement prévu</strong><div>GitHub Pages</div></div>
+</div>
+<div class="divider"></div>
+<h3 style="margin-bottom:6px">Mentions légales et confidentialité</h3>
+<p class="legal">Établissement scolaire : à compléter. Sources d’information : Service-Public.fr, ministère du Travail, Urssaf et Code du travail. Mise à jour de cette version : 10 novembre 2026. Les réponses sont traitées localement dans le navigateur : aucune base de données, aucun compte et aucun envoi de réponses vers un serveur ne sont prévus par ce fichier. Aucun cookie n’est utilisé. Les résultats sont indicatifs et ne constituent pas un conseil juridique.</p>
+<p class="legal sources">Sources officielles : <a href="https://www.service-public.fr/particuliers/vosdroits/F1649" target="_blank" rel="noopener">Âge minimum et conditions d’embauche</a> · <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F2216" target="_blank" rel="noopener">Durée du travail des moins de 18 ans</a> · <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F1688" target="_blank" rel="noopener">Travail de nuit des mineurs</a> · <a href="https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/montant-smic.html" target="_blank" rel="noopener">Montant du SMIC</a> · <a href="https://travail-emploi.gouv.fr/le-temps-de-travail-des-jeunes-de-moins-de-18-ans" target="_blank" rel="noopener">Ministère du Travail : temps de travail des jeunes</a>.</p>
+</section>
+<footer class="footer"><div><strong>LES JOBS D’ÉTÉ</strong> — Projet pédagogique Amandine & Anna, Première STMG.</div><div class="noprint">Pense à vérifier les règles officielles à la date de ton emploi.</div></footer>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+const form=$('jobForm');let currentStep=0;const totalSteps=4;
+function value(id){return $(id)?.value?.trim()||''}
+function checked(name){return document.querySelector(`input[name="${name}"]:checked`)?.value||''}
+function updateAgeFields(){
+ const age=Number(value('age'));document.querySelectorAll('.minor-only').forEach(el=>el.classList.toggle('hidden',!(age>=14&&age<18)));
+ document.querySelectorAll('.under16-only').forEach(el=>el.classList.toggle('hidden',!(age>=14&&age<16)));
+}
+$('age').addEventListener('input',updateAgeFields);
+document.querySelectorAll('input[name="holidays"]').forEach(el=>el.addEventListener('change',()=> $('holidayDates').classList.toggle('hidden',checked('holidays')!=='yes')));
+function showStep(n){currentStep=n;document.querySelectorAll('.step').forEach((s,i)=>s.classList.toggle('active',i===n));$('stepLabel').textContent=`Étape ${n+1} sur ${totalSteps}`;$('progressPercent').textContent=`${Math.round((n+1)/totalSteps*100)} %`;$('progressBar').style.width=`${(n+1)/totalSteps*100}%`; $('questionnaire').scrollIntoView({behavior:'smooth',block:'start'});updateAgeFields();}
+function validateStep(n){
+ const step=document.querySelector(`.step[data-step="${n}"]`);let first=null;
+ step.querySelectorAll('[required]').forEach(el=>{if(el.offsetParent!==null&&!el.value){el.setCustomValidity('Merci de compléter ce champ.');el.reportValidity();if(!first)first=el;}else el.setCustomValidity('');});
+ if(n===0){let a=Number(value('age'));if(!value('age')||a<14||a>99){$('age').setCustomValidity('Indique un âge de 14 ans ou plus.');$('age').reportValidity();return false;}if(!checked('holidays')){alert('Indique si le travail a lieu pendant les vacances scolaires.');return false;}if(value('endDate')&&value('startDate')&&value('endDate')<value('startDate')){$('endDate').setCustomValidity('La date de fin doit être après la date de début.');$('endDate').reportValidity();return false;}}
+ if(n===2){if(!value('daysPerWeek')||!value('startTime')||!value('endTime')){alert('Renseigne le nombre de jours travaillés et les heures de début et de fin.');return false;}}
+ return !first;
+}
+document.querySelectorAll('.next').forEach(b=>b.addEventListener('click',()=>{if(validateStep(currentStep))showStep(Math.min(currentStep+1,3));}));
+document.querySelectorAll('.prev').forEach(b=>b.addEventListener('click',()=>showStep(Math.max(currentStep-1,0))));
+$('startBtn').addEventListener('click',()=>{
+ $('home').classList.add('hidden');
+ document.querySelector('.features').classList.add('hidden');
+ $('legal').classList.add('hidden');
+ $('rulesInfo').classList.add('hidden');
+ $('questionnaire').classList.remove('hidden');
+ showStep(0);
+ const ageField=$('age'); if(ageField) ageField.focus({preventScroll:true});
+});
+$('homeBtn').addEventListener('click',()=>{
+ $('questionnaire').classList.add('hidden'); $('home').classList.remove('hidden');
+ document.querySelector('.features').classList.remove('hidden'); $('legal').classList.remove('hidden');
+ $('home').scrollIntoView({behavior:'smooth',block:'start'});
+});
+$('rulesBtn').addEventListener('click',()=>{$('rulesInfo').classList.toggle('hidden');$('rulesInfo').scrollIntoView({behavior:'smooth'});});
+function minutes(t){if(!t)return null;let [h,m]=t.split(':').map(Number);return h*60+m;}
+function calcSchedule(){
+ let s=minutes(value('startTime')),e=minutes(value('endTime')),bs=minutes(value('breakStart')),be=minutes(value('breakEnd'));
+ if(s===null||e===null)return null;if(e<=s)e+=1440;
+ let breakM=0,breakValid=false,pre=null,post=null;
+ if(bs!==null&&be!==null){let b1=bs,b2=be;if(b1<s)b1+=1440;if(b2<=b1)b2+=1440;breakM=b2-b1;breakValid=b1>=s&&b2<=e;pre=b1-s;post=e-b2;}
+ let span=e-s;let work=span-(breakValid?breakM:0);return {span,breakM,breakValid,pre,post,work};
+}
+function updateLive(){
+ let c=calcSchedule();if(!c){$('liveCalc').textContent='Le calcul apparaîtra lorsque tu auras renseigné tes horaires.';return;}
+ let days=Number(value('daysPerWeek'))||0;let week=value('weeklyHours')?Number(value('weeklyHours')):c.work/60*days;
+ $('liveCalc').innerHTML=`<strong>Calcul estimé :</strong> ${(c.work/60).toFixed(2).replace('.',',')} h de travail par jour · ${week.toFixed(2).replace('.',',')} h par semaine.${c.breakValid?` Pause déclarée : ${c.breakM} min.`:' Pause non renseignée ou horaires de pause incomplets.'}`;
+}
+['startTime','endTime','breakStart','breakEnd','daysPerWeek','weeklyHours'].forEach(id=>$(id).addEventListener('input',updateLive));
+function addRule(list,status,title,desc,detail=''){list.push({status,title,desc,detail});}
+function analyse(){
+ const age=Number(value('age')),minor=age<18,under16=age<16,sch=calcSchedule(),days=Number(value('daysPerWeek')),week=value('weeklyHours')?Number(value('weeklyHours')):(sch?sch.work/60*days:null),rules=[];
+ const dayMax=under16?7:minor?8:10,weekMax=minor?(age===14&&value('sector')==='Agriculture'?32:35):48,restMin=under16?14:age<18?12:11;
+ if(sch){addRule(rules,sch.work/60<=dayMax?'ok':'no','Durée quotidienne',`Durée calculée : ${(sch.work/60).toFixed(2)} h. Limite générale utilisée : ${dayMax} h par jour.`,sch.work/60<=dayMax?'La durée journalière renseignée respecte le seuil général.':'La durée journalière dépasse le seuil général. Des règles spécifiques ou dérogations doivent être vérifiées.');}
+ else addRule(rules,'maybe','Durée quotidienne','Les horaires sont incomplets.','Renseigne les heures de début et de fin pour effectuer le calcul.');
+ if(week!==null&&Number.isFinite(week))addRule(rules,week<=weekMax?'ok':'no','Durée hebdomadaire',`Durée estimée : ${week.toFixed(2)} h. Limite générale : ${weekMax} h par semaine.`,week<=weekMax?'Le total déclaré respecte le seuil général.':'Le total déclaré dépasse la limite générale. Pour les majeurs, la moyenne sur 12 semaines doit aussi être contrôlée.');
+ else addRule(rules,'maybe','Durée hebdomadaire','Le total hebdomadaire ne peut pas être calculé.','Vérifie le nombre de jours et les horaires.');
+ if(sch){
+   if(minor){let pauseNotRequired=sch.work<=270;let pauseOK=pauseNotRequired||(sch.breakValid&&sch.breakM>=30&&sch.pre<=270&&sch.post<=270);addRule(rules,pauseOK?'ok':sch.breakValid&&sch.breakM<30?'no':'maybe','Pause quotidienne',`Pause indiquée : ${sch.breakValid?sch.breakM+' minutes':'non déterminable'}.`,pauseNotRequired?'La journée ne dépasse pas 4 h 30 de travail : le seuil de pause spécifique des mineurs n’est pas déclenché.':pauseOK?'La pause déclarée atteint 30 minutes et aucune période continue ne dépasse 4 h 30 selon les horaires saisis.':'Les mineurs ne doivent pas travailler plus de 4 h 30 d’affilée ; au-delà de 4 h 30 de travail quotidien, une pause d’au moins 30 minutes consécutives est requise. Vérifie les horaires de pause.');}
+   else {let pauseOK=sch.work<360||(sch.breakValid&&sch.breakM>=20);addRule(rules,pauseOK?'ok':sch.breakValid?'no':'maybe','Pause quotidienne',`Pause indiquée : ${sch.breakValid?sch.breakM+' minutes':'non renseignée'}.`,pauseOK?'Le seuil général de pause est respecté ou la journée est inférieure à 6 h.':'À partir de 6 h de travail quotidien, une pause d’au moins 20 minutes consécutives est requise.');}
+ } else addRule(rules,'maybe','Pause quotidienne','Impossible de vérifier la pause sans horaires complets.');
+ if(sch){let overnight=1440-sch.span;addRule(rules,overnight>=restMin*60?'ok':'no','Repos quotidien estimé',`Repos entre deux journées identiques : ${(overnight/60).toFixed(1)} h. Minimum général : ${restMin} h.`,overnight>=restMin*60?'Le repos estimé respecte le seuil général.':'Le repos estimé est inférieur au minimum général. Vérifie les horaires réels entre deux journées.');}
+ else addRule(rules,'maybe','Repos quotidien','Les horaires ne permettent pas de calculer le repos entre deux journées.');
+ const rest=Number(value('weeklyRest')),consec=value('consecutiveRestDays');
+ if(minor){if(consec!=='')addRule(rules,Number(consec)>=2?'ok':'maybe','Repos hebdomadaire',`${consec} jour(s) consécutif(s) déclaré(s).`,Number(consec)>=2?'Deux jours consécutifs sont déclarés.':'En principe, les mineurs ont droit à deux jours de repos consécutifs. Vérifie toute dérogation applicable.');else addRule(rules,'maybe','Repos hebdomadaire','Le nombre de jours consécutifs de repos n’est pas renseigné.','Les mineurs bénéficient en principe de deux jours consécutifs de repos par semaine.');}
+ else if(Number.isFinite(rest)&&value('weeklyRest'))addRule(rules,rest>=35?'ok':'no','Repos hebdomadaire',`${rest} h de repos continu déclarées. Minimum général : 35 h consécutives.`,rest>=35?'Le repos déclaré atteint 35 heures.':'Le repos déclaré est inférieur à 35 heures consécutives.');
+ else addRule(rules,'maybe','Repos hebdomadaire','La durée du repos hebdomadaire n’est pas renseignée.');
+ if(minor){
+   const parent=checked('parent');addRule(rules,parent==='yes'||parent==='na'?'ok':parent==='no'?'no':'maybe','Autorisation du représentant légal',parent==='yes'?'Autorisation écrite déclarée.':parent==='na'?'Émancipation déclarée.':parent==='no'?'Aucune autorisation déclarée.':'Information non renseignée.', 'Un mineur doit en principe obtenir l’autorisation écrite de son représentant légal, sauf émancipation.');
+ }
+ if(under16){
+   const inspection=checked('inspection');addRule(rules,inspection==='yes'?'ok':inspection==='no'?'no':'maybe','Autorisation de l’inspection du travail',inspection==='yes'?'Autorisation déclarée.':inspection==='no'?'Autorisation non obtenue selon la réponse.':'Information inconnue.','Pour un emploi à 14 ou 15 ans, l’employeur doit obtenir l’accord de l’inspection du travail avant l’embauche.');
+   const light=checked('lightWork');addRule(rules,light==='yes'?'ok':light==='no'?'no':'maybe','Travaux légers',light==='yes'?'Travaux légers déclarés.':light==='no'?'Le poste ne semble pas limité à des travaux légers.':'Nature des tâches à confirmer.','À 14-15 ans, seuls des travaux légers adaptés à l’âge sont autorisés.');
+   if(checked('holidays')==='yes'){
+    let hd=Number(value('holidayDays')),rd=Number(value('holidayRestDays'));let ag=value('sector')==='Agriculture';let minDays=ag?7:14;addRule(rules,hd>=minDays?'ok':hd>0?'no':'maybe','Durée des vacances scolaires',hd?`${hd} jours de vacances indiqués.`:'Durée non renseignée.',hd>=minDays?'La durée atteint le minimum général indiqué pour ce secteur.':`Pour cette situation, les vacances doivent durer au moins ${minDays} jours (règle générale à confirmer selon le secteur).`);
+    if(hd&&value('holidayRestDays')){addRule(rules,rd>=hd/2?'ok':'no','Repos continu pendant les vacances',`${rd} jour(s) de repos continu sur ${hd}.`,rd>=hd/2?'Le repos continu représente au moins la moitié de la durée des vacances.':'Le repos continu déclaré ne représente pas la moitié de la durée des vacances.');}
+    else addRule(rules,'maybe','Repos continu pendant les vacances','La durée du repos continu n’est pas renseignée.');
+   }else addRule(rules,'no','Travail pendant les vacances scolaires','La réponse indique que le travail n’a pas lieu pendant les vacances scolaires.','Pour un jeune de 14 ou 15 ans, le dispositif de job d’été est réservé aux vacances scolaires sous conditions.');
+ }
+ if(minor){const med=checked('medical');addRule(rules,med==='yes'?'ok':med==='no'?'maybe':'maybe','Visite d’information et de prévention',med==='yes'?'Visite déclarée.':med==='no'?'Visite non effectuée selon la réponse.':'Information non renseignée.','Les travailleurs de moins de 18 ans doivent bénéficier d’une visite d’information et de prévention avant leur affectation au poste.');}
+ const risk=checked('risk');addRule(rules,risk==='no'?'ok':risk==='yes'?'maybe':'maybe','Sécurité et travaux à risques',risk==='no'?'Aucun risque particulier déclaré.':risk==='yes'?'Des risques particuliers sont signalés.':'Les risques du poste ne sont pas connus.','Les travaux dangereux sont interdits aux mineurs sauf dérogations strictement encadrées. Fais vérifier les tâches par l’employeur ou un interlocuteur compétent.');
+ if(minor){let night=checked('night'),cut=under16?20:22;addRule(rules,night==='no'?'ok':night==='yes'?'maybe':'maybe','Travail de nuit',night==='yes'?'Des horaires de nuit sont déclarés.':night==='no'?'Aucun horaire de nuit déclaré.':'Information non renseignée.',`Le travail de nuit est en principe interdit aux mineurs : période de nuit à partir de ${cut} h jusqu’à 6 h. Des dérogations très encadrées existent selon l’âge et le secteur ; à vérifier avant toute conclusion.`);}
+ else {let night=checked('night');addRule(rules,night==='no'?'ok':'maybe','Travail de nuit',night==='yes'?'Des horaires de nuit sont déclarés.':'Information non renseignée ou absence de nuit déclarée.','Pour les majeurs, le travail de nuit répond à des règles spécifiques (justification, plages horaires, suivi et contreparties) qui ne sont pas entièrement vérifiées ici.');}
+ if(minor&&age>=16){let hw=checked('holidayWork');addRule(rules,hw==='no'?'ok':hw==='yes'?'maybe':'maybe','Travail les jours fériés',hw==='yes'?'Travail un jour férié déclaré.':hw==='no'?'Aucun jour férié déclaré.':'Information non renseignée.','Le travail des 16-17 ans les jours fériés est en principe interdit, avec des exceptions sectorielles précises. Vérification nécessaire si oui.');}
+ if(!minor){let sun=checked('sunday');addRule(rules,sun==='yes'?'maybe':sun==='no'?'ok':'maybe','Travail du dimanche',sun==='yes'?'Travail dominical déclaré.':'Information non renseignée ou pas de travail le dimanche.','Le travail dominical dépend du secteur et des dérogations applicables ; ce point demande une vérification selon l’activité.');}
+ const pay=Number(value('hourlyPay')),exp=value('experience');if(value('hourlyPay')){
+   let smic=12.31,minimum=smic;if(age<17&&exp==='no')minimum=9.85;else if(age>=17&&age<18&&exp==='no')minimum=11.08;
+   let label=minimum===smic?'SMIC brut horaire général indicatif':`Minimum minoré indicatif (${age<17?'80':'90'} % du SMIC)`;
+   addRule(rules,pay>=minimum?'ok':'no','Salaire brut horaire',`${pay.toFixed(2).replace('.',',')} € renseignés ; seuil de comparaison : ${minimum.toFixed(2).replace('.',',')} €.`,pay>=minimum?`Le montant atteint le ${label}. Un minimum conventionnel supérieur peut s’appliquer.`:`Le montant est inférieur au ${label}. Vérifie aussi l’expérience et la convention collective.`);
+   if(exp==='')addRule(rules,'maybe','Expérience professionnelle','L’expérience de branche n’est pas précisée.','La minoration du SMIC pour les mineurs dépend notamment de moins de 6 mois de pratique professionnelle dans la branche.');
+ }else addRule(rules,'maybe','Salaire brut horaire','Le salaire n’est pas renseigné.','Compare le salaire brut horaire au SMIC et au minimum conventionnel applicable à la date du contrat.');
+ const collective=checked('collectiveKnown');addRule(rules,collective==='yes'&&value('collective')?'ok':'maybe','Convention collective',collective==='yes'&&value('collective')?'Convention collective indiquée : '+value('collective')+'.':'Convention collective non identifiée ou non renseignée.','Le minimum conventionnel peut être plus favorable que le SMIC. Demande le nom ou l’IDCC à l’employeur.');
+ const written=checked('written');addRule(rules,written==='yes'?'ok':written==='no'?'maybe':'maybe','Informations écrites sur l’emploi',written==='yes'?'Des documents écrits sont déclarés.':written==='no'?'Aucun document écrit déclaré.':'Information non renseignée.','Demande les informations écrites sur le contrat, les horaires, la rémunération et la convention collective.');
+ return rules;
+}
+function renderResults(){
+ const rules=analyse(),ok=rules.filter(r=>r.status==='ok').length,no=rules.filter(r=>r.status==='no').length,maybe=rules.filter(r=>r.status==='maybe').length;
+ $('countOk').textContent=ok;$('countNo').textContent=no;$('countMaybe').textContent=maybe;$('countTotal').textContent=rules.length;
+ $('resultIntro').textContent=`Analyse indicative pour une personne de ${value('age')} ans, dans le secteur ${value('sector')||'non précisé'}.`;
+ $('overallNotice').textContent=no?`Attention : ${no} point(s) semblent ne pas respecter les seuils généraux renseignés. ${maybe} point(s) nécessitent aussi une vérification. Ne commence pas un emploi si une situation dangereuse ou interdite n’est pas clarifiée.`:maybe?`Aucune non-conformité certaine n’a été détectée parmi les réponses, mais ${maybe} point(s) restent à vérifier. Le bilan ne peut donc pas être considéré comme une validation juridique complète.`:'Les réponses ne révèlent pas de dépassement des seuils généraux contrôlés. Ce résultat reste indicatif et ne garantit pas à lui seul la conformité complète du contrat.';
+ $('ruleResults').innerHTML=rules.map(r=>`<article class="rule ${r.status}"><h3>${escapeHtml(r.title)} <span class="status ${r.status}">${r.status==='ok'?'✓ Respecté':r.status==='no'?'! Non respecté':'? À vérifier'}</span></h3><p>${escapeHtml(r.desc)}</p><div class="detail">${escapeHtml(r.detail)}</div></article>`).join('');
+ const advice=[];if(no)advice.push('Demande à ton employeur de corriger les points signalés avant de commencer ou de poursuivre le travail.');if(maybe)advice.push('Fais confirmer les points orange par ton employeur, un représentant légal ou un service officiel.');advice.push('Demande une copie de ton contrat, de tes horaires et les coordonnées de la convention collective applicable.');advice.push('En cas de doute sur la sécurité ou les tâches confiées à un mineur, demande conseil avant d’effectuer ces tâches.');$('adviceList').innerHTML=advice.map(x=>`<li>${escapeHtml(x)}</li>`).join('');
+ $('questionnaire').classList.add('hidden');$('results').classList.remove('hidden');$('results').scrollIntoView({behavior:'smooth'});
+}
+function escapeHtml(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+form.addEventListener('submit',e=>{e.preventDefault();if(!validateStep(3))return;renderResults();});
+$('editBtn').addEventListener('click',()=>{$('results').classList.add('hidden');$('questionnaire').classList.remove('hidden');showStep(0);});
+$('printBtn').addEventListener('click',()=>window.print());
+$('restartBtn').addEventListener('click',()=>{form.reset();$('results').classList.add('hidden');$('questionnaire').classList.remove('hidden');$('home').classList.add('hidden');document.querySelector('.features').classList.add('hidden');$('legal').classList.add('hidden');$('holidayDates').classList.add('hidden');updateAgeFields();showStep(0);});
+updateAgeFields();updateLive();
+</script>
+</body>
+</html>
